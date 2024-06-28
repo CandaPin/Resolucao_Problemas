@@ -30,6 +30,35 @@ Para obter uma cópia local e executá-la, siga estes passos simples:
    ```
 
 ## Uso 💡
+Para utilizar o projeto, é necessário configurar alguns arquivos de acordo com as necessidades específicas do processo de empacotamento. Dentro da pasta `configs/`, você deve adicionar um arquivo chamado `FirstFitDecreasingConfig.json`. Este arquivo deve seguir o formato abaixo, substituindo os caminhos por valores genéricos que correspondam à estrutura do seu projeto:
+
+```json
+{
+    "sources": {
+        "BackLogOrdens": {
+            "from": "xlsx",
+            "path": "<caminho_para_o_arquivo_de_ordens>",
+            "sheetName": "Sheet1"
+        },
+        "TiposDeCaixa": {
+            "from": "xlsx",
+            "path": "<caminho_para_o_arquivo_de_caixas>",
+            "sheetName": "Tipos de caixa"
+        }
+    },
+    "outputs": {
+        "results": {
+            "type": "csv",
+            "path": "<caminho_para_salvar_resultados>"
+        },
+        "leftOver": {
+            "type": "csv",
+            "path": "<caminho_para_salvar_sobras>"
+        }
+    }
+}
+```
+
 **TODO:** Detalhar usecase depois
 
 ## Resultados 📊

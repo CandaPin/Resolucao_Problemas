@@ -30,6 +30,35 @@ To get a local copy up and running, follow these simple steps:
    ```
 
 ## Usage 💡
+To use the project, you need to set up some files according to the specific needs of the packing process. Inside the `configs/` folder, you must add a file named `FirstFitDecreasingConfig.json`. This file should follow the format below, with paths replaced by generic values that correspond to the structure of your project:
+
+```json
+{
+    "sources": {
+        "BackLogOrders": {
+            "from": "xlsx",
+            "path": "<path_to_order_file>",
+            "sheetName": "Sheet1"
+        },
+        "BoxTypes": {
+            "from": "xlsx",
+            "path": "<path_to_box_file>",
+            "sheetName": "Box Types"
+        }
+    },
+    "outputs": {
+        "results": {
+            "type": "csv",
+            "path": "<path_to_save_results>"
+        },
+        "leftOver": {
+            "type": "csv",
+            "path": "<path_to_save_leftovers>"
+        }
+    }
+}
+```
+
 **TODO:** Detail use case later
 
 ## Results 📊
