@@ -52,7 +52,7 @@ def firstFitDecreasing(df, bin_restrictions, route_restrictions):
     
     # Initialize bins list
     bins = []
-    leftover_items = pd.DataFrame(columns=df_sorted.columns)  # Initialize leftover items DataFrame
+    df_leftover_items = pd.DataFrame(columns=df_sorted.columns)  # Initialize leftover items DataFrame
     
     # Flag to track if a split was made
     items_to_drop = []
@@ -90,7 +90,6 @@ def firstFitDecreasing(df, bin_restrictions, route_restrictions):
                     bin['Peso_total'] += item['Peso_total']
                     bin['Amt.Items'] += item['Peças']
 
-
                     # Remove the item from the original DataFrame
                     items_to_drop.append(index)
                     placed = True
@@ -100,7 +99,7 @@ def firstFitDecreasing(df, bin_restrictions, route_restrictions):
             if not placed:
                 # Check if creating a new bin exceeds route capacity mm3
                 if sum([bin['Volume'] for bin in bins if bin['Rota'] == item["Rota"]]) >= route_restrictions[route_restrictions["Rota"] == item["Rota"]]["Capacidade"].values[0]:
-                    leftover_items = leftover_items.append(item)  # Add item to leftover items DataFrame
+                    df_leftover_items = pd.concat([df_leftover_items, item], ignore_index=True)
                 else:
                     bins.append({
                         'Items_info': [{'Item_id': item['id'], 'Pecas': item['Peças']}],
@@ -120,7 +119,7 @@ def firstFitDecreasing(df, bin_restrictions, route_restrictions):
                     break
     
 
-    return bins, leftover_items
+    return bins, df_leftover_items
 
 def postProcessBins(bins, df):
     rows = []

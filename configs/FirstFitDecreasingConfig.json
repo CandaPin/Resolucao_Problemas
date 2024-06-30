@@ -15,15 +15,15 @@
     "outputs":{
         "results":{
             "type": "csv",
-            "path": "Resolucao_Problemas/data/output/result_item_bin_info.csv"
+            "path": "C:/Users/Diogo/Documents/GitHub/Resolucao_Problemas/data/output/result_item_bin_info.csv"
         },
         "leftOver":{
             "type": "csv",
-            "path": "Resolucao_Problemas/data/output/leftOver_items.csv"
+            "path": "C:/Users/Diogo/Documents/GitHub/Resolucao_Problemas/data/output/leftOver_items.csv"
         },
         "handledBacklog":{
             "type": "csv",
-            "path": "Resolucao_Problemas/data/output/handled_backlog_items.csv"
+            "path": "C:/Users/Diogo/Documents/GitHub/Resolucao_Problemas/data/output/handled_backlog_items.csv"
         }
     }
 }
