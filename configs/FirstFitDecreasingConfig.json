@@ -2,12 +2,12 @@
     "sources":{
         "BackLogOrdens":{
             "from":"xlsx",
-            "path": "C:/Users/Diogo/Documents/GitHub/Resolucao_Problemas/01_Data/ordens_pre_process_revisado.xlsx",
+            "path": "C:/Users/Diogo/Documents/GitHub/Resolucao_Problemas/data/input/ordens_pre_process_revisado.xlsx",
             "sheetName": "Sheet1"
         },
         "TiposDeCaixa":{
             "from":"xlsx",
-            "path": "C:/Users/Diogo/Documents/GitHub/Resolucao_Problemas/01_Data/Dados - desafio disciplina RPVMM.xlsx",
+            "path": "C:/Users/Diogo/Documents/GitHub/Resolucao_Problemas/data/input/Dados - desafio disciplina RPVMM.xlsx",
             "sheetName": "Tipos de caixa"
         }
     },
@@ -15,15 +15,15 @@
     "outputs":{
         "results":{
             "type": "csv",
-            "path": "Resolucao_Problemas/02_Result/result_item_bin_info.csv"
+            "path": "Resolucao_Problemas/data/output/result_item_bin_info.csv"
         },
         "leftOver":{
             "type": "csv",
-            "path": "Resolucao_Problemas/02_Result/leftOver_items.csv"
+            "path": "Resolucao_Problemas/data/output/leftOver_items.csv"
         },
         "handledBacklog":{
             "type": "csv",
-            "path": "Resolucao_Problemas/02_Result/handled_backlog_items.csv"
+            "path": "Resolucao_Problemas/data/output/handled_backlog_items.csv"
         }
     }
 }
