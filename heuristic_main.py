@@ -42,9 +42,6 @@ class FirstFitDecreasingProcess():
             self.FirstFitDecreasingLogger.logger.info("Starting data handlers reading")
             self.dfBackLog, self.dfRoutesRestrictions = backLogHandler(pd.read_excel(self.dictFileConfig['sources']['BackLogOrdens']['path']))
             self.dfBinsRestrictions = binsHandler(pd.read_excel(self.dictFileConfig['sources']['TiposDeCaixa']['path'],sheet_name=self.dictFileConfig['sources']['TiposDeCaixa']['sheetName']))
-            
-            # teste com subconjunto:
-            #self.dfBackLog = self.dfBackLog.query("chave_loja_buffer_onda in ('2_EN_3', '10_CX_1', '31_EN_3', '33_EN_3', '3_CX_9')")
 
         except DirectoryDoesNotExistsException:
             raise DirectoryDoesNotExistsException
