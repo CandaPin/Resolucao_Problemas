@@ -9,6 +9,10 @@ __pycache__/
 # Dados
 01-Data/
 
+# Notebooks de rascunho
+Rascunho/
+Rascunho/**
+
 # Distribution / packaging
 .Python
 build/
