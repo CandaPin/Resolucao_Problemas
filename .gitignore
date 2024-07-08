@@ -8,7 +8,8 @@ __pycache__/
 
 # Dados
 01-Data/
-data/
+02-data/
+data/*
 
 # Notebooks de rascunho
 Rascunho/
