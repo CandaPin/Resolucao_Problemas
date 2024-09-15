@@ -4,7 +4,7 @@
 [![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-3918/)
 
 ## Sobre o Projeto 📖
-Repositório destinado ao desenvolvimento do projeto proposto na disciplina "Resolução de Problemas via Modelagem Matemática", oferecida pela Unifesp, campus de São José dos Campos (https://sites.google.com/view/model-matematica/projetos?authuser=1).
+Repositório destinado ao desenvolvimento do projeto proposto na disciplina "Resolução de Problemas via Modelagem Matemática", oferecida pela Unifesp, campus de São José dos Campos (https://sites.google.com/view/model-matematica/projetos).
 Este projeto aborda um problema prático de Empacotamento Binário (Bin Packing Problem - BPP) proposto pela Companhia Lojas Renner S.A., um ecossistema de moda e estilo de vida que inclui Renner, Camicado, Youcom, Realize CFI e Repassa. Ao longo dos anos, a Renner consolidou-se como uma das maiores e mais tradicionais redes de lojas de departamento do Brasil, reconhecida por sua ampla presença no mercado e forte atuação no comércio eletrônico. A empresa oferece uma variedade de produtos, incluindo roupas, calçados, acessórios e itens para o lar. O objetivo deste projeto é utilizar a heurística First Fit Decreasing (FFD) para otimizar o empacotamento de itens em caixas, considerando restrições específicas como volume, peso e outros fatores logísticos do setor de moda. Durante o projeto, contamos com a valiosa colaboração de Guilherme Freitas Coelho, que ofereceu suporte desde a compreensão inicial do problema até a adaptação das restrições, visando uma melhor aproximação às situações reais enfrentadas pelo setor.
 
 ## Funcionalidades 🌟
